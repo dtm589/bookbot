@@ -6,7 +6,7 @@ with open("books/frankenstein.txt") as f:
 
     def count_words():
         words = file_contents.split()
-        print(len(words))
+        print(f"{len(words)} words found in the document.")
 
     def count_letters():
         # conver to lower case
@@ -14,6 +14,7 @@ with open("books/frankenstein.txt") as f:
         
         print(dict(Counter(lower_case)))
 
-
+    print("--- Begin report of books/frankenstein.txt ---")
     count_words()
     count_letters()
+    print("--- End report ---")
